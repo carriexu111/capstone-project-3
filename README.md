@@ -88,5 +88,41 @@ Linear regression is widely used in practice and adapts naturally to even comple
 
 <img width="914" alt="Screen Shot 2023-06-05 at 11 48 37 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/1197c137-5b6d-4608-9c15-ccf9f00358b0">
 
+* Lag features
+
+To make a lag feature we shift the observations of the target series so that they appear to have occured later in time. Here we've created a 1-step lag feature, though shifting by multiple steps is possible too
+
+The plots with 'lag' feature:
+
+<img width="904" alt="Screen Shot 2023-06-06 at 12 00 04 AM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/c0042958-0a9c-4ca2-885f-01a4fcbae042">
+
+The trend component of a time series represents a persistent, long-term change in the mean of the series. The trend is the slowest-moving part of a series, the part representing the largest time scale of importance. In a time series of product sales, an increasing trend might be the effect of a market expansion as more people become aware of the product year by year.
+
+To see what kind of trend a time series might have, we can use a moving average plot. To compute a moving average of a time series, we compute the average of the values within a sliding window of some defined width. Each point on the graph represents the average of all the values in the series that fall within the window on either side. The idea is to smooth out any short-term fluctuations in the series so that only long-term changes remain.
+
+<img width="920" alt="Screen Shot 2023-06-06 at 12 03 01 AM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/f6529638-aa88-4fdc-ba86-cc0b76bbc074">
+
+## Modeling
+
+### Linear regression
+
+<img width="932" alt="Screen Shot 2023-06-06 at 12 04 49 AM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/444ac804-ddfb-4efb-8f1b-eda87c6c6178">
+
+### XGBoost
+
+Linear regression excels at extrapolating trends, but can't learn interactions. XGBoost excels at learning interactions, but can't extrapolate trends. Here we'll learn how to create "hybrid" forecasters that combine complementary learning algorithms and let the strengths of one make up for the weakness of the other.
+
+<img width="603" alt="Screen Shot 2023-06-06 at 12 10 43 AM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/ea0a4c80-c332-444c-beeb-83aca231c092">
+
+### Deep Learning Multivariate RNN / LSTM Network
+
+I use the Adam optimazation method since it is widely used and performs much better than regular gradient descent.
+
+## Conclusion
+* Store sales had always increased at the end of the year.
+* There are somewhat correlation with Daily Oil Prices for sales and transactions. 
+* GROCERY I and BEVERAGES are the top selling families.
+* XGBoost forcast for time series has better result than linear regression. 
+
 
 
