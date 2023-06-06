@@ -39,7 +39,9 @@ oil.csv
 * Daily oil price. Includes values during both the train and test data timeframes. (Ecuador is an oil-dependent country and it's economical health is highly vulnerable to shocks in oil prices.)
 
 ## Exploratory Data Analysis
+
 * Transactions
+
 There is a stable pattern in Transaction. All months are similar except December from 2013 to 2017 by boxplot. In addition, we've just seen same pattern for each store in previous plot. Store sales had always increased at the end of the year. Transactions increase in spring and decrease after spring.
 
 <img width="878" alt="Screen Shot 2023-06-05 at 6 55 28 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/6aa411f8-4e66-4c30-a6ac-38ca8f706223">
