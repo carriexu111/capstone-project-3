@@ -55,30 +55,35 @@ Stores make more transactions at weekends. Almost, the patterns are same from 20
 <img width="896" alt="Screen Shot 2023-06-05 at 11 22 47 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/61613d5f-cabd-4fa1-a026-e699853440b6">
 
 * Oil data
-** Linear Interpolation for oil data
+
+  * Linear Interpolation for oil data
 
 <img width="900" alt="Screen Shot 2023-06-05 at 11 26 14 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/ffb237cf-3be2-4c00-985a-ee779892c3cd">
 
-** The correlation with Daily Oil Prices for sales and transactions. 
+  * The correlation with Daily Oil Prices for sales and transactions. 
+  
 The correlation values are not strong but the sign of sales is negative. We can imagine that if daily oil price is high, we expect that the Ecuador's economy is bad and it means the price of product increases and sales decreases. There is a negative relationship here.
 
 <img width="898" alt="Screen Shot 2023-06-05 at 11 28 37 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/c454bcda-f3c5-4ece-8357-a4d4784f8508">
 
 * Sales data
-** Store difference 
+
+  * Store difference 
 
 Most of the stores are similar to each other, when we examine them with correlation matrix. Some stores, such as 20, 21, 22, and 52 may be a little different.
 
 <img width="895" alt="Screen Shot 2023-06-05 at 11 37 41 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/9d654d12-f258-4ad8-b8e9-7ffa73ddbe30">
 
-which product family sells much more?
+  * which product family sells much more?
+
 <img width="891" alt="Screen Shot 2023-06-05 at 11 43 06 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/bdde9cdb-381e-4916-afb8-4dc083ab499d">
 
-How different can stores be from each other? The plot shows the patten of stores from different cities.
+  * How different can stores be from each other? The plot shows the patten of stores from different cities.
 
 <img width="889" alt="Screen Shot 2023-06-05 at 11 45 25 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/e04795f6-38f0-4c9b-8e21-5e28e731d02b">
 
 * Forecast and Visualization
+
 Linear regression is widely used in practice and adapts naturally to even complex forecasting tasks. The linear regression algorithm learns how to make a weighted sum from its input features.
 
 <img width="914" alt="Screen Shot 2023-06-05 at 11 48 37 PM" src="https://github.com/carriexu111/capstone-project-3/assets/115129335/1197c137-5b6d-4608-9c15-ccf9f00358b0">
